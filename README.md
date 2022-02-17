@@ -1,4 +1,4 @@
-# PCAT fotoğraf yükleme uygulaması
+# Clean Blog Projesi
 
 Patika.dev üzerinden almakta olduğum. "Node.JS" modülünün, "PCAT Projesi" bölümü kapsamında yapmakta olduğumuz projedir.
 
@@ -38,3 +38,15 @@ Clean Blog projemizin bu 2. bölümünde aşağıdaki işlemleri yapalım.
 - Views klasörü oluşturalım ve tüm .html dosyalarımız views klasörü içerisinde .ejs dosyalarına çevirelim.
 - Partials klasör yapısını oluşturalım.
 - İlgili yönlendirmeleri ve _navigation.ejs klasöründeki link düzenlemelerini yapalım.
+
+***
+
+## Clean Blog Projesi 3. Bölüm
+
+Clean Blog projemizin bu 3. bölümünde aşağıdaki işlemleri yapalım.
+
+- cleanblog-test-db adında bir veri tabanı için mongoose ile gerekli bağlantı bilgilerini yazalım.
+- "Add New Post" sayfamızdan göndericeğimiz veriler req.body ile yakalayalım, gerekli middleware fonksiyonarını kullanalım.
+- title:String, detail:String, dateCreated:Date(default now) özelliklerine sahip `Post` modelini oluşturalım.
+- Veri tabanımızda 3 adet pos dökümanı oluşturalım.
+- Oluşturduğumuz post dökümanlarını Blog sitemizin anasayfasında gösterelim.
