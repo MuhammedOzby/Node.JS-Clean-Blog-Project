@@ -1,0 +1,19 @@
+{
+  "name": "pcat",
+  "version": "1.0.0",
+  "description": "PCAT Photo App for Patika.dev - Node.JS lesson (Node.JS module, Project: PCAT)",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon --config nodemon.json app.js"
+  },
+  "keywords": [
+    "patka-dev",
+    "node.js",
+    "example-for-nodejs"
+  ],
+  "author": "Muhammed Mustafa ÖZBAY",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "2.5.1"
+  }
+}
