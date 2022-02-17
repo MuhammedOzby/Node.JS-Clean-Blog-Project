@@ -47,9 +47,20 @@ app.get('/add_post', (req, res) => {
   res.render('partials/_content.ejs', { pages: 'add_post' });
 });
 
+/**
+ * * Add new post POST request
+ */
 app.post('/post', async (req, res) => {
   await PostModel.create(req.body);
   res.redirect('/');
+});
+
+/**
+ * Dynamic post page
+ */
+app.get('/post/:id', async (req, res) => {
+  const postData = await PostModel.findById(req.params.id);
+  res.render('partials/_content.ejs', { pages: 'post', postData });
 });
 
 app.listen(PORT, () => {
