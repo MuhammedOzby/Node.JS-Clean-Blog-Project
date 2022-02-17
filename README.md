@@ -1,6 +1,6 @@
 # PCAT fotoğraf yükleme uygulaması
 
-Patika.dev üzerinden almakta oldğum. "Node.JS" modülünün, "PCAT Projesi" bölümü kapsamında yapmakta olduğumuz projedir.
+Patika.dev üzerinden almakta olduğum. "Node.JS" modülünün, "PCAT Projesi" bölümü kapsamında yapmakta olduğumuz projedir.
 
 Bu proje bölümler halinde yapılmaktadır. Her bölüm işlendikten sonra github üzerin gerekli commit işlemleri yapılacaktır.
 Bu sebepten ötütü proje dahilinde yapılanların hepsi bu repoda barınmaktadır.
@@ -22,5 +22,19 @@ Clean Blog projesini farklı ödevlere ayırarak yapmaya çalışacağız. Bu ö
 - Prettier ayarlarını yapalım.(İsteğe bağlı)
 - Express ve Nodemon modüllerini indirelim.
 - `git init` ile lokal repomuzu oluşturalım.
-- get request içerisinde const blog = { id: 1, title: "Blog title", description: "Blog description" }, içeriğini gönderelim.
+- get request içerisinde `const blog = { id: 1, title: "Blog title", description: "Blog description" }`, içeriğini gönderelim.
 - .gitignore dosyası oluşturalım ve ilk repomuzu gönderelim.
+
+***
+
+## Clean Blog Projesi 2. Bölüm
+
+Clean Blog projemizin bu 2. bölümünde aşağıdaki işlemleri yapalım.
+
+- Public klasörü oluşturup statik dosyalarımızı içerisine yerleştirelim.
+- İlgili middleware fonksiyonunu yazarak public klasörümüzü uygulamamıza kaydedelim.
+- EJS modülünü indirelim.
+- Uygulamamızda EJS modülünü kullanacağımızı belirtelim.
+- Views klasörü oluşturalım ve tüm .html dosyalarımız views klasörü içerisinde .ejs dosyalarına çevirelim.
+- Partials klasör yapısını oluşturalım.
+- İlgili yönlendirmeleri ve _navigation.ejs klasöründeki link düzenlemelerini yapalım.
