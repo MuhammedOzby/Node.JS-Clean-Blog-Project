@@ -1,10 +1,11 @@
 {
   "name": "pcat",
   "version": "1.0.0",
-  "description": "PCAT Photo App for Patika.dev - Node.JS lesson (Node.JS module, Project: PCAT)",
+  "description": "Clean blog App for Patika.dev - Node.JS lesson (Node.JS module, Project: CleanBlog)",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon --config nodemon.json app.js"
+    "test": "nodemon --config nodemon.json app.js",
+    "start": "node app.js"
   },
   "keywords": [
     "patka-dev",
