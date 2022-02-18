@@ -61,3 +61,14 @@ Clean Blog projemizin bu 4. bölümünde aşağıdaki işlemleri yapalım.
 - app.js içerisinde GET metoduyla "/posts/:id" ile gönderilen "_id" yi yakalayalım. .
 - tekil post bilgilerini post.ejs dosyasına gönderelim.
 - post.ejs içerisine post.title, post.detail ve post.dateCreated bilgilerini gönderelim. (her bir post için ayrı image kullanmayacağız)
+
+***
+
+## Clean Blog Projesi 5. Bölüm
+
+Clean Blog projemizin bu 5. bölümünde aşağıdaki işlemleri yapalım.
+
+- post.ejs template içerisinde **UPDATE** ve **DELETE** butonu oluşturalım.
+- Herhangi bir post verisini güncellemek için gerekli çalışmaları yapalım.
+- Herhangi bir post verisini silmek için gerekli çalışmaları yapalım.
+- Kodumuzu MVC yapısına göre tekrar düzenleyelim.

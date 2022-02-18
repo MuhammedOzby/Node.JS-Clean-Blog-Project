@@ -1,13 +1,17 @@
 <div class="row">
   <div class="col-lg-8 col-md-10 mx-auto">
-    <form novalidate method="post" action="/post">
+    <form
+      novalidate
+      method="post"
+      action="<%- postData ? `/update_post/${postData._id}` : '/post' %>"
+    >
       <div class="control-group">
         <div class="form-group floating-label-form-group controls">
           <label>Post Title</label>
           <input
             type="text"
             class="form-control"
-            placeholder="Title"
+            value="<%- postData ? postData.title : 'Title' %>"
             id="title"
             required
             data-validation-required-message="Please enter your name."
@@ -22,8 +26,7 @@
           <textarea
             rows="5"
             class="form-control"
-            placeholder="Message"
-            id="message"
+            id="detail"
             required
             data-validation-required-message="Please enter a message."
             name="detail"
@@ -39,3 +42,10 @@
     </form>
   </div>
 </div>
+<script>
+  (() => {
+    document.getElementById(
+      'detail'
+    ).value = `<%- postData ? postData.detail : 'Detail' %>`;
+  })();
+</script>

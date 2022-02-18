@@ -7,9 +7,33 @@
       </span>
     </div>
   </div>
+
+  <div class="col-lg-4 col-md-2 mx-auto">
+    <a
+      type="button"
+      href="/update_post/<%- postData._id %>"
+      class="btn btn-primary"
+      >Update</a
+    >
+    <button type="button" class="btn btn-danger" onclick="deleteAlert()">
+      Delete
+    </button>
+  </div>
 </div>
 <div class="row">
   <div class="col-lg-8 col-md-10 mx-auto">
     <p><%- postData.detail %></p>
   </div>
 </div>
+
+<script>
+  function deleteAlert() {
+    let text = 'Are you sure you want to delete?';
+    if (confirm(text) == true) {
+      text = 'You pressed OK!';
+      window.location.href = '/delete_post/<%- postData._id %>';
+    } else {
+      text = 'You canceled!';
+    }
+  }
+</script>
