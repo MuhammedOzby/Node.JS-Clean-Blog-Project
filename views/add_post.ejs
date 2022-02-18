@@ -3,7 +3,7 @@
     <form
       novalidate
       method="post"
-      action="<%- postData ? `/update_post/${postData._id}` : '/post' %>"
+      action="<%- locals.postData ? `/update_post/${postData._id}` : '/post' %>"
     >
       <div class="control-group">
         <div class="form-group floating-label-form-group controls">
@@ -11,7 +11,7 @@
           <input
             type="text"
             class="form-control"
-            value="<%- postData ? postData.title : 'Title' %>"
+            value="<%-  locals.postData ? postData.title : 'Title' %>"
             id="title"
             required
             data-validation-required-message="Please enter your name."
@@ -46,6 +46,6 @@
   (() => {
     document.getElementById(
       'detail'
-    ).value = `<%- postData ? postData.detail : 'Detail' %>`;
+    ).value = `<%-  locals.postData ? postData.detail : 'Detail' %>`;
   })();
 </script>

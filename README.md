@@ -5,6 +5,11 @@ Patika.dev üzerinden almakta olduğum. "Node.JS" modülünün, "PCAT Projesi" b
 Bu proje bölümler halinde yapılmaktadır. Her bölüm işlendikten sonra github üzerin gerekli commit işlemleri yapılacaktır.
 Bu sebepten ötütü proje dahilinde yapılanların hepsi bu repoda barınmaktadır.
 
+[Clean Blog App - Heroku sitesi](https://cleandb-blog-app.herokuapp.com/)
+
+> **Not:** Şifre ve bilgi içeren kısımlar kaldırışmıştır. Son halinde *Herkese Açık* olabilecek şekilde düzenlenmiştir.
+> Heroku üzerinden yayımlanan kısmında ise **UPDATE**, **DELETE**, **POST** işlemleri boşa çıkarılmıştır (*işlevsizleştirilmiştir*). Bilgiler değiştirilmiştir.
+
 ***
 
 ## Clean Blog Proje - 1. Bölüm - Ödev 7
@@ -72,3 +77,12 @@ Clean Blog projemizin bu 5. bölümünde aşağıdaki işlemleri yapalım.
 - Herhangi bir post verisini güncellemek için gerekli çalışmaları yapalım.
 - Herhangi bir post verisini silmek için gerekli çalışmaları yapalım.
 - Kodumuzu MVC yapısına göre tekrar düzenleyelim.
+
+***
+
+## Clean Blog Projesi 6. Bölüm
+
+Clean Blog projemizin bu 6. bölümünde aşağıdaki işlemleri yapalım.
+
+- Uygulamamızı **HEROKU** ve **MongoDB Atlas** ücresiz servislerini kullanarak yükleyelim.
+- Not: Uygulamamızda sayfalama ve görsel yükleme işlemlerini yapmadık. Sonraki projemizde de bu özellikleri kullanacağız.
