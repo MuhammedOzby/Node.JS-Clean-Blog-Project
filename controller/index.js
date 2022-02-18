@@ -36,7 +36,6 @@ router.get('/add_post', (req, res) => {
  * * Add new post POST request
  */
 router.post('/post', async (req, res) => {
-  await PostModel.create(req.body);
   res.redirect('/');
 });
 
@@ -56,12 +55,11 @@ router.get('/post/:id', async (req, res) => {
  * * Delete post
  */
 router.get('/delete_post/:id', async (req, res) => {
-  await PostModel.findByIdAndDelete(req.params.id);
   res.redirect('/');
 });
 
 /**
- * * Delete post
+ * * Update post page
  */
 router.get('/update_post/:id', async (req, res) => {
   const postData = await PostModel.findById(req.params.id);
@@ -72,8 +70,7 @@ router.get('/update_post/:id', async (req, res) => {
  * * Update post
  */
 router.post('/update_post/:id', async (req, res) => {
-  await PostModel.findByIdAndUpdate(req.params.id, req.body);
-  res.redirect(`/post/${req.params.id}`);
+  res.redirect('/');
 });
 
 module.exports = router;
