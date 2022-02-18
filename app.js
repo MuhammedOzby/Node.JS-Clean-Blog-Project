@@ -6,14 +6,10 @@ const mongoose = require('mongoose');
 const app = express();
 
 mongoose
-  .connect(
-    //'mongodb://cleandb:plQ3s9SSnE2bd6QC@localhost/cleanblog-test-db',
-    'mongodb+srv://cleandb:plQ3s9SSnE2bd6QC@cluster0.lnjvx.mongodb.net/cleanblog-test-db?retryWrites=true&w=majority',
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  )
+  .connect('mongodb://localhost/cleanblog-test-db', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => {
     console.log('Connection succesful.');
   })
@@ -21,7 +17,7 @@ mongoose
     console.log('Connection error. \n' + err);
   });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
