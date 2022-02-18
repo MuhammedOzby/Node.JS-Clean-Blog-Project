@@ -13,8 +13,9 @@ router.get('/', async (req, res) => {
 /**
  * * Anasayfa(index) page GET request.
  */
-router.get('/index', (req, res) => {
-  res.render('partials/_content.ejs', { pages: 'index' });
+router.get('/index', async (req, res) => {
+  const posts = await PostModel.find({});
+  res.render('partials/_content.ejs', { pages: 'index', posts });
 });
 
 /**
@@ -43,8 +44,12 @@ router.post('/post', async (req, res) => {
  * * Dynamic post page
  */
 router.get('/post/:id', async (req, res) => {
-  const postData = await PostModel.findById(req.params.id);
-  res.render('partials/_content.ejs', { pages: 'post', postData });
+  try {
+    const postData = await PostModel.findById(req.params.id);
+    res.render('partials/_content.ejs', { pages: 'post', postData });
+  } catch (err) {
+    res.send(err);
+  }
 });
 
 /**

@@ -24,6 +24,12 @@ app.set('view engine', 'ejs');
 const indexPath = require('./controller/index');
 app.use('/', indexPath);
 
+app.get('/', function (req, res, next) {
+  res.statusCode = 400;
+  var e = new Error('error message');
+  next(e);
+});
+
 app.listen(PORT, () => {
   console.log(`Sunucu dinlemeye başlamştır. PORT: ${PORT}`);
 });
