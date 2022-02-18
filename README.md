@@ -8,7 +8,7 @@ Bu sebepten ötütü proje dahilinde yapılanların hepsi bu repoda barınmaktad
 [Clean Blog App - Heroku sitesi](https://cleandb-blog-app.herokuapp.com/)
 
 > **Not:** Şifre ve bilgi içeren kısımlar kaldırışmıştır. Son halinde *Herkese Açık* olabilecek şekilde düzenlenmiştir.
-> Heroku üzerinden yayımlanan kısmında ise **UPDATE**, **DELETE**, **POST** işlemleri boşa çıkarılmıştır (*işlevsizleştirilmiştir*). Bilgiler değiştirilmiştir.
+> Heroku üzerinden yayımlanan kısmında ise **UPDATE**, **DELETE**, **POST** işlemleri boşa çıkarılmıştır (*işlevsizleştirilmiştir*).
 
 ***
 

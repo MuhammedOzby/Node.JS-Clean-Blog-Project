@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 mongoose
-  .connect('MongoDBConnectionString', {
+  .connect('mongodb://localhost/cleanblog-test-db', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
